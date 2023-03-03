@@ -27,17 +27,18 @@ body {
     box-sizing: border-box;
 }
 
+.header-container li, .footer-container li {
+    display: flex;
+    list-style: none;
+}
+
+a {
+    color: var(--black-color);
+    text-decoration: none;
+}
+
 .fa-solid {
     color: var(--main-color);
-}
-
-.section-title {
-    margin: 0;
-    font-size: 22px;
-}
-
-.card-title {
-    font-size: 16px;
 }
 
 /****** Cards General ***********/
@@ -53,6 +54,15 @@ body {
     object-fit: cover;
 }
 
+.section-title {
+    margin: 0;
+    font-size: 22px;
+}
+
+.card-title {
+    font-size: 16px;
+}
+
 .euro {
     font-weight: 700;
 }
@@ -63,7 +73,156 @@ body {
 
 /****** Header ***********/
 
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    height: 79px;
+}
 
+.logo-booki {
+    height: 19px;
+    width: auto;
+    margin: 30px 30px 30px -20px
+}
+
+.header-container ul {
+    display: flex;
+    margin: 0 -20px 0 0;
+}
+
+.header-container a {
+    border-top: var(--hidden-color) solid 2px;
+    margin: 0 42px 0 27px;
+    padding-top: 16px;
+}
+
+.header-container a:hover {
+    border-top: var(--main-color) solid 2px;
+    color: var(--main-color);
+}
+
+/****** Info Group ***********/
+
+.info-group .info-group-subtitle {
+    margin-top: 8px;
+}
+
+/****** Search Bar ***********/
+
+.search-bar {
+    display: flex;  
+    width: 377px;
+    margin-top: 35px;
+}
+
+.location-dot-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--main-bg-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 15px 0 0 15px;
+}
+
+.fa-location-dot {
+    color: var(--black-color);
+    font-size: 18px;
+}
+
+.search-area {
+    border: var(--main-bg-color) solid 1px;
+    height: 46px;
+    padding-left: 17px;
+    font-weight: 700;
+}
+
+.search-area::placeholder {
+    color: var(--black-color);
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+}
+
+.info-group input {
+    outline: none;
+    font-size: 16px;
+}
+
+.search-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--white-color);
+    font-weight: 700;
+  
+    background-color: var(--main-color);
+    width: 132px;
+    height: 50px;
+    border-radius: 0 15px 15px 0;
+}
+
+/****** Filters ***********/
+
+.filters {
+    display:flex;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.filters-title {
+    font-size: 18px;
+    margin-right: 32px;
+}
+
+.filters-list {
+    display: flex;
+}
+
+.filters-button {
+    border: var(--main-bg-color) solid 2px;
+    margin-right: 32px;
+    padding: 15px 20px;
+    border-radius: 25px;
+}
+  
+.filters-button:hover {
+    background-color: var(--filter-bg-color);
+}
+
+.filters-icons {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.filters-subtitle {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+}
+
+/****** Info Dot ***********/
+
+.info-dot {
+    display: flex;
+    align-items: center;
+    margin: 35px 0;
+}
+
+.info-logo {
+    color: var(--main-color);
+    font-size: 10px;
+    border: var(--main-bg-color) solid 2px;
+    padding: 7px 10px;
+    border-radius: 25px;
+    margin-right: 11px;
+}
+
+.info-dot-subtitle {
+    font-size: 16px;
+    margin: 0;
+}
 
 /****** Hebergements And Populaires ***********/
 
@@ -130,8 +289,6 @@ body {
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
-
-
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */

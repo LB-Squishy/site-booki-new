@@ -14,14 +14,66 @@
 
 <body>
     <div class="main-container">
-        <header>
-            
-        </header>
-        <main>
-            <div class="hebergements-and-populaires">
-                <section class="hebergements">
 
+        <header class="header-container">
+            <img src="./images/logo/Booki.png" alt="Logo de Booki" class="logo-booki">
+            <nav>
+                <ul>
+                    <li><a href="#hebergements">Hébergements</a></li>
+                    <li><a href="#activités">Activités</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+
+            <section class="info-group">
+                <div class="info-group-title">
+                    <h1 class="section-title">Trouvez votre hébergement pour des vacances de rêve</h1>
+                    <p class="info-group-subtitle">En plein centre-ville ou en pleine nature</p>
+                </div>
+                <div class="search-bar">
+                    <div class="location-dot-box">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <form method="get" action="#">
+                        <input type="text" name="recherche" placeholder="Marseille, France" class="search-area">
+                    </form>
+                    <div class="search-button">
+                        <p>Rechercher</p>
+                    </div>
+                </div>
+                <div class="filters">
+                    <div>
+                        <h3 class="filters-title">Filtres</h3>
+                    </div>
+                    <div class="filters-list">
+                        <div class="filters-button">
+                            <p class="filters-subtitle"><i class="fa-solid fa-money-bill-wave filters-icons" ></i>Économique</p>
+                        </div>
+                        <div class="filters-button">
+                            <p class="filters-subtitle"><i class="fa-solid fa-person filters-icons" ></i>Familial</p>
+                        </div>
+                        <div class="filters-button">
+                            <p class="filters-subtitle"><i class="fa-solid fa-heart filters-icons" ></i>Romantique</p>
+                        </div>
+                        <div class="filters-button">
+                            <p class="filters-subtitle"><i class="fa-solid fa-fire filters-icons"></i>Nos pépites</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-dot">	
+                    <i class="fa-solid fa-info info-logo"></i>
+                    <p class="info-dot-subtitle">Plus de 500 logements sont disponibles dans la ville</p>                 
+				</div>	
+        
+            </section>
+
+            <div class="hebergements-and-populaires">
+
+                <section class="hebergements" id="hebergements">
                 </section>
+
                 <section class="populaires">
                     <div class="populaires-title">
                         <h2 class="section-title">Les plus populaires</h2>
@@ -83,7 +135,14 @@
                 </section>
             </div>
         </main>
-        <footer></footer>
+
+        <section class="activités" id="activités">
+        </section>
+
+        <footer class="footer-container">
+
+        </footer>
+
     </div>
 </body>
 
