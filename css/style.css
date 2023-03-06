@@ -687,7 +687,7 @@ a {
     /****** Hebergements ***********/
     
     .hebergements {
-        width: 65%;
+        width: 100%;
     }
     
     .hebergements-cards {
@@ -740,7 +740,7 @@ a {
     /****** Populaires ***********/
     
     .populaires {
-        width: 32%;
+        width: 100%;
     }
     
     .populaires-title {
