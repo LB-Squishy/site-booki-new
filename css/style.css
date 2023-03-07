@@ -639,6 +639,7 @@ a {
     
     .card {
         background-color: white;
+        box-sizing: border-box;
         border-radius: 20px;
         padding: 5px;
         filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
@@ -699,7 +700,6 @@ a {
         justify-content: space-between;
         flex-wrap: wrap;
         margin-top: 0;
-        width: 98%;
     }
     
     .hebergements-cards .card {
@@ -724,7 +724,7 @@ a {
     .card-4 {
         order: 4;
     }
-    
+
     .card-6 {
         order: 5;
     }
@@ -776,7 +776,6 @@ a {
 
     .populaires-cards {
         flex-direction: column;
-        width: 98%
     }
     
     .populaires-title {
@@ -836,7 +835,6 @@ a {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        width: 98%;
     }
     
     .activités-cards .card {
@@ -846,7 +844,7 @@ a {
     
     .activités-cards img {
         width: 100%;
-        height: 380px;
+        height: 141px;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
     }
