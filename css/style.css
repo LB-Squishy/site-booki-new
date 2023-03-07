@@ -132,6 +132,18 @@ a {
     width: 132px;
     height: 50px;
     border-radius: 0 15px 15px 0;
+
+    position: relative;
+}
+
+.child1 {
+    position: absolute;
+}
+
+.child2 {
+    position: absolute;
+    color: var(--white-color);
+    visibility: hidden;
 }
 
 /****** Filters ***********/
@@ -569,6 +581,18 @@ a {
         height: 50px;
         border-radius: 15px;
         margin-left: -15px;
+        position: relative;
+    }
+    
+    .child1 {
+        position: absolute;
+        visibility: hidden;
+    }
+    
+    .child2 {
+        position: absolute;
+        color: var(--white-color);
+        visibility: visible;
     }
     
     /****** Filters ***********/
