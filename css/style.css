@@ -144,7 +144,7 @@ a {
 
 .filters-title {
     font-size: 18px;
-    margin-right: 32px;
+    margin-right: 10px;
 }
 
 .filters-list {
@@ -154,7 +154,7 @@ a {
 
 .filters-button {
     border: var(--main-bg-color) solid 2px;
-    margin-right: 32px;
+    margin: 0 10px 10px 0;
     padding: 15px 20px;
     border-radius: 25px;
 }
@@ -180,7 +180,7 @@ a {
 .info-dot {
     display: flex;
     align-items: center;
-    margin: 35px 0;
+    margin: 25px 0 35px 0;
 }
 
 .info-logo {
@@ -221,6 +221,10 @@ a {
 
 .card-title {
     font-size: 16px;
+}
+
+.card-subtitle{
+    font-size: 14px;
 }
 
 .euro {
@@ -435,6 +439,7 @@ a {
     .filters-title{
         margin-top: 0;
     }
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -525,18 +530,7 @@ a {
     
     .search-bar {
         width: 350px;
-    }
-    
-    .location-dot-box {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    
-        background-color: var(--main-bg-color);
-        width: 50px;
-        height: 50px;
-        border-radius: 15px 0 0 15px;
-    }
+    }   
     
     .fa-location-dot {
         color: var(--black-color);
@@ -596,9 +590,11 @@ a {
     
     .filters-button {
         border: var(--main-bg-color) solid 2px;
-        margin-right: 32px;
-        padding: 15px 20px;
+        margin: 0 5px 10px 0;
+        width: 162px;
+        height: 50px;
         border-radius: 25px;
+        box-sizing: border-box;
     }
       
     .filters-button:hover {
@@ -607,12 +603,12 @@ a {
     }
     
     .filters-icons {
-        font-size: 18px;
+        font-size: 16px;
         margin-right: 10px;
     }
     
     .filters-subtitle {
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 700;
         margin: 0;
     }
@@ -622,7 +618,7 @@ a {
     .info-dot {
         display: flex;
         align-items: center;
-        margin: 35px 0;
+        margin: 25px 0 0 0;
     }
     
     .info-logo {
@@ -677,12 +673,12 @@ a {
     
     .hebergements-and-populaires {
         display: flex;
+        flex-direction: column-reverse;
         justify-content: space-between;
     }
     
     .hebergements-and-populaires section {
-        background-color: var(--main-bg-color);
-        border-radius: 20px;
+        border-radius: 0px;
         padding: 30px;
         box-sizing: border-box;
     }
@@ -692,18 +688,24 @@ a {
     .hebergements {
         width: 100%;
     }
+
+    #hebergements {
+        background-color: var(--white-color);
+    }
     
     .hebergements-cards {
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
         flex-wrap: wrap;
+        margin-top: 0;
     }
     
     .hebergements-cards .card {
         display: flex;
         flex-direction: column;
-        margin-top: 33px;
-        width: 30%;
+        margin-top: 15px;
+        width: 100%;
     }
     
     .hebergements-cards img {
@@ -744,6 +746,11 @@ a {
     
     .populaires {
         width: 100%;
+        margin-top: 35px;
+    }
+
+    .populaires-cards {
+        flex-direction: column;
     }
     
     .populaires-title {
@@ -757,7 +764,8 @@ a {
     }
     
     .populaires-cards .card {
-        margin-top: 33px;
+        margin-top: 15px;
+        width: 100%;
     }
     
     .populaires-cards img {
@@ -794,18 +802,19 @@ a {
     .activités {
         background-color: var(--white-color);
         border-radius: 20px;
-        margin-top: 35px;
+        margin-top: 25px;
         padding: 30px;  
     }
     
     .activités-cards {
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
     }
     
     .activités-cards .card {
-        margin-top: 33px;
-        width: 23%;
+        margin-top: 15px;
+        width: 100%;
     }
     
     .activités-cards img {
@@ -831,12 +840,14 @@ a {
     
     .footer-container {
         display: flex;
+        flex-direction: column;
         justify-content: flex-start;
         background-color: var(--main-bg-color);
+        margin-top: 25px;
     }
     
     .footer-content {
-        width: 32%;
+        width: 100%;
         margin: 0 0 20px 20px;
     }
     
