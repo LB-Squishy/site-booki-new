@@ -155,6 +155,7 @@ a {
 }
 
 .filters-title {
+    display: flex;
     font-size: 18px;
     margin-right: 10px;
 }
@@ -166,7 +167,7 @@ a {
 
 .filters-button {
     border: var(--main-bg-color) solid 2px;
-    margin: 0 10px 10px 0;
+    margin: 0 10px 0 0;
     padding: 15px 20px;
     border-radius: 25px;
 }
@@ -411,8 +412,9 @@ a {
 }
 
 .footer-content {
-    width: 32%;
-    margin: 0 0 20px 20px;
+    box-sizing: border-box;
+    width: 33%;
+    padding: 0 0 20px 20px;
 }
 
 .footer-container .footer-title {
@@ -540,13 +542,13 @@ a {
     /****** Search Bar ***********/
     
     .search-bar {
-        width: 350px;
+        width: 280px;
     }   
     
     .search-button {
         width: 50px;
         border-radius: 15px;
-        margin-left: -15px;
+        margin-left: -30px;
 
         position: relative;
     }
@@ -566,7 +568,7 @@ a {
     }
     
     .filters-button {
-        margin-right: 5px;
+        margin: 0 5px 10px 0;
         width: 162px;
         box-sizing: border-box;
     }
